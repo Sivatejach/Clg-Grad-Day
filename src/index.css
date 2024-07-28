@@ -1,0 +1,12 @@
+.container-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+  }
+  
+  .form-container {
+    width: 50%; /* Adjust as needed */
+  }
+  
