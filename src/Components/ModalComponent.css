@@ -1,0 +1,10 @@
+/* ModalComponent.css */
+.modal-90w {
+    max-width: 90%;
+  }
+  
+  .modal-body-content {
+    max-height: 60vh; /* Set a maximum height */
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+  

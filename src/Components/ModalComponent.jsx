@@ -1,19 +1,26 @@
 import React from 'react';
 import { Modal, Button } from 'react-bootstrap';
 
+import './ModalComponent.css';
+
 const ModalComponent = ({ showModal, handleClose }) => {
   return (
-    <Modal show={showModal} onHide={handleClose}>
+    <Modal show={showModal} onHide={handleClose} dialogClassName="modal-90w">
       <Modal.Header closeButton>
-        <Modal.Title>Modal heading</Modal.Title>
+        <Modal.Title>Scrolling Long Content Modal</Modal.Title>
       </Modal.Header>
-      <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+      <Modal.Body>
+        {/* Long content to enable scrolling */}
+        <div className="modal-body-content">
+          <p>Woohoo, you're reading this text in a modal! </p>
+          {Array.from({ length: 50 }, (_, i) => (
+            <p key={i}>This is some long content... {i + 1}</p>
+          ))}
+        </div>
+      </Modal.Body>
       <Modal.Footer>
         <Button variant="secondary" onClick={handleClose}>
           Close
-        </Button>
-        <Button variant="primary" onClick={handleClose}>
-          Save Changes
         </Button>
       </Modal.Footer>
     </Modal>
