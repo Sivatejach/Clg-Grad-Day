@@ -1,10 +1,33 @@
 /* ModalComponent.css */
-.modal-90w {
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .modal-90w {
     max-width: 90%;
   }
   
   .modal-body-content {
-    max-height: 60vh; /* Set a maximum height */
-    overflow-y: auto; /* Enable vertical scrolling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .graduation-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .modal-title {
+    font-weight: bold;
   }
   
