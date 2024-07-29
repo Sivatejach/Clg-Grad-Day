@@ -13,7 +13,7 @@ const ModalComponent = ({ showModal, handleClose }) => {
         {/* Long content to enable scrolling */}
         <div className="modal-body-content">
           <p>Woohoo, you're reading this text in a modal! </p>
-          {Array.from({ length: 50 }, (_, i) => (
+          {Array.from({ length: 10 }, (_, i) => (
             <p key={i}>This is some long content... {i + 1}</p>
           ))}
         </div>

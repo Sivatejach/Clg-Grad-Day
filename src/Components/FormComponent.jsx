@@ -6,14 +6,14 @@ const FormComponent = () => {
     <div className="form-container">
       <h1>React Form</h1>
       <Form>
-        <Form.Group controlId="formBasicEmail">
-          <Form.Label>Email address</Form.Label>
-          <Form.Control type="email" placeholder="Enter email" />
+        <Form.Group controlId="formBasicRollNumber">
+          <Form.Label>Roll Number</Form.Label>
+          <Form.Control type="text" placeholder="Enter roll number" />
         </Form.Group>
 
-        <Form.Group controlId="formBasicPassword">
-          <Form.Label>Password</Form.Label>
-          <Form.Control type="password" placeholder="Password" />
+        <Form.Group controlId="formBasicPhoneNumber">
+          <Form.Label>Phone Number</Form.Label>
+          <Form.Control type="tel" placeholder="Enter phone number" />
         </Form.Group>
         <div className='btn-container'>
         <Button variant="primary" type="submit">
